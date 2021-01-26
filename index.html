@@ -14,7 +14,10 @@
           return response.json();
         })
         .then(function (data) {
+          var mainContainer = document.getElementById("myData");
+          var div = document.createElement("div");
           div.innerHTML = data.affirmation;
+          mainContainer.appendChild(div);
         })
         .catch(function (err) {
           console.log("error: " + err);
