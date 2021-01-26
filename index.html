@@ -16,7 +16,7 @@
         .then(function (data) {
           var mainContainer = document.getElementById("myData");
           var div = document.createElement("div");
-          div.innerHTML = data.affirmation;
+          div.innerHTML = data[0].affirmation;
           mainContainer.appendChild(div);
         })
         .catch(function (err) {
