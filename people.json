@@ -1,17 +1,11 @@
 [
     {
-        "id": "1",
-        "firstName": "John",
-        "lastName": "Doe"
+        "affirmation":"We are all works in progress"
     },
     {
-        "id": "2",
-        "firstName": "Mary",
-        "lastName": "Peterson"
+        "affirmation":"The path to success is to take massive, determined action"
     },
     {
-        "id": "3",
-        "firstName": "George",
-        "lastName": "Hansen"
+        "affirmation":"All you need is the plan, the roadmap, and the courage to press on to your destination"
     }
 ]
