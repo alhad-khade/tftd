@@ -15,7 +15,7 @@ async function renderUsers() {
   users.forEach(user => {
       console.log(user);
       let htmlSegment = `<div class="user">
-                         <p>${user.temperament}</p>
+                         <img src="${user.url}" alt="${user.id}" width="${user.width}" height="${user.height}">
                       </div>`;
 
       html += htmlSegment;
