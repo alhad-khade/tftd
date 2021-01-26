@@ -13,7 +13,7 @@ async function renderUsers() {
   let html = '';
   users.forEach(user => {
       let htmlSegment = `<div class="user">
-                         <p>user.temperament</p>
+                         <p>${user.temperament}</p>
                       </div>`;
 
       html += htmlSegment;
