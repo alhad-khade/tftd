@@ -9,7 +9,9 @@
   <body>
     <div id="myData"></div>
     <script>
-      fetch("https://www.affirmations.dev/")
+      const proxyurl = "https://cors-anywhere.herokuapp.com/";
+      const url = "https://www.affirmations.dev/"; // site that doesn’t send Access-Control-*
+      fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
         .then(function (response) {
           return response.json();
         })
