@@ -1,5 +1,5 @@
 async function getUsers() {
-  let url = ('https://api.thedogapi.com/v1/images/search', { mode: 'no-cors' });
+  let url = ('https://api.thedogapi.com/v1/images/search');
   try {
       let res = await fetch(url);
       return await res.json();
