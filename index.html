@@ -9,7 +9,7 @@
   <body>
     <div id="myData"></div>
     <script>
-      fetch("https://www.affirmations.dev/")
+      fetch("https://www.affirmations.dev/", {mode: 'no-cors'})
         .then(function (response) {
           return response.json();
         })
