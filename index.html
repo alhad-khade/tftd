@@ -18,9 +18,10 @@
           var div = document.createElement("div");
           div.innerHTML = data[0].affirmation;
           mainContainer.appendChild(div);
+          console.log(data[0].affirmation);
         })
         .catch(function (err) {
-          console.log("error: " + err);
+          console.log('error: ' + err);
         });
     </script>
   </body>
