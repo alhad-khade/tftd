@@ -1,5 +1,5 @@
 async function getUsers() {
-  let url = 'https://www.affirmations.dev/';
+  let url = 'https://api.thedogapi.com/v1/images/search';
   try {
       let res = await fetch(url);
       return await res.json();
@@ -13,7 +13,7 @@ async function renderUsers() {
   let html = '';
   users.forEach(user => {
       let htmlSegment = `<div class="user">
-                         <p>user.affirmation</p>
+                         <p>user.temperament</p>
                       </div>`;
 
       html += htmlSegment;
