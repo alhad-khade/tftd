@@ -15,7 +15,7 @@ async function renderUsers() {
   users.forEach(user => {
       console.log(user);
       let htmlSegment = `<div class="user">
-                         <h1>${user.breeds.name}</h1>
+                         <h1>${user.breeds[0].name}</h1>
                          <p>Breed group: ${user.breeds[0].breed_group}</p>
                          <p>Bred for: ${user.breeds[0].bred_for}</p>
                          <p>Life span: ${user.breeds[0].life_span}</p>
