@@ -15,6 +15,12 @@ async function renderUsers() {
   users.forEach(user => {
       console.log(user);
       let htmlSegment = `<div class="user">
+                         <h1>${user.breeds[0].name</h1>
+                         <p>Breed group: ${user.breeds[0].breed_group</p>
+                         <p>Bred for: ${user.breeds[0].bred_for</p>
+                         <p>Life span: ${user.breeds[0].life_span</p>
+                         <p>Temperament: ${user.breeds[0].temperament</p>
+                         <p>Weight (in Kg): ${user.breeds[0].weight.metric</p>
                          <img src="${user.url}" alt="${user.id}" width="${user.width}" height="${user.height}">
                       </div>`;
 
